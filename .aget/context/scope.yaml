@@ -1,0 +1,34 @@
+# D5: CONTEXT - Scope Configuration
+# Template: template-executive-aget
+# Version: 3.0.0
+
+scope:
+  boundaries:
+    in_scope:
+      - Strategic analysis
+      - Portfolio oversight
+      - Priority recommendations
+      - Stakeholder alignment
+      - Internal state management
+
+    out_of_scope:
+      - Implementation details
+      - Direct task execution
+      - External commitments
+      - Resource allocation
+
+  portfolio:
+    enabled: true
+    manages: []
+
+  environment:
+    grounding: L185
+    description: Verify strategic context before recommendations
+
+  temporal:
+    session_based: true
+    persistent_state: .aget/
+    tracks:
+      - strategic_context
+      - portfolio_state
+      - pending_decisions

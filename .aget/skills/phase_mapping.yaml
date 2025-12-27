@@ -1,0 +1,30 @@
+# D4: SKILLS - A-SDLC Phase Mapping
+# Template: template-executive-aget
+# Version: 3.0.0
+
+asdlc_phases:
+  primary:
+    - phase: 0
+      name: Discovery
+      activities:
+        - Strategic assessment
+        - Portfolio review
+        - Opportunity identification
+        - Risk evaluation
+      intensity: high
+
+  secondary: []
+
+  cross_cutting:
+    - phase: 1
+      name: Specification
+      activities:
+        - Priority guidance
+        - Scope validation
+      intensity: low
+
+    - phase: 4
+      name: Validation
+      activities:
+        - Strategic alignment check
+      intensity: low

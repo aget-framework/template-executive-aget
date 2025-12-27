@@ -1,0 +1,31 @@
+# D4: SKILLS - Capability Declarations
+# Template: template-executive-aget
+# Version: 3.0.0
+
+capabilities:
+  core:
+    - id: capability-strategic-planning
+      description: Develop and assess strategic direction
+      scope: organizational
+
+    - id: capability-portfolio-oversight
+      description: Monitor and guide portfolio health
+      scope: portfolio
+
+    - id: capability-stakeholder-alignment
+      description: Ensure stakeholder needs are balanced
+      scope: organizational
+
+    - id: capability-priority-setting
+      description: Determine and communicate priorities
+      scope: portfolio
+
+  governance:
+    - id: capability-governance-balanced
+      description: Balanced governance for strategic work
+
+    - id: capability-session-protocols
+      description: Session management patterns
+
+    - id: capability-evolution-tracking
+      description: Learning capture and application

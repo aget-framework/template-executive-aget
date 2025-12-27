@@ -1,0 +1,32 @@
+# D3: REASONING - Planning Patterns
+# Template: template-executive-aget
+# Version: 3.0.0
+
+planning:
+  approach: strategic
+  style: top_down
+
+  patterns:
+    strategic_assessment:
+      steps:
+        - Gather portfolio state
+        - Analyze trends and risks
+        - Identify strategic options
+        - Recommend direction
+        - Document rationale
+      governance: stakeholder_alignment
+
+    priority_setting:
+      steps:
+        - Assess competing demands
+        - Apply strategic criteria
+        - Balance constraints
+        - Communicate priorities
+      governance: evidence-based
+
+  verification:
+    required:
+      - Strategic rationale documented
+      - Stakeholder impact considered
+    recommended:
+      - Alternative options explored

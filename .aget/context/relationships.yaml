@@ -1,0 +1,34 @@
+# D5: CONTEXT - Agent Relationships
+# Template: template-executive-aget
+# Version: 3.0.0
+
+relationships:
+  managed_by:
+    - role: principal
+      interaction: strategic_oversight
+
+  peers:
+    - role: supervisor
+      template: template-supervisor-aget
+      interaction: portfolio_coordination
+
+    - role: analyst
+      template: template-analyst-aget
+      interaction: data_synthesis
+
+  manages: []  # Executive advises but doesn't directly manage
+
+  stakeholders:
+    - role: leadership
+      interaction: strategic_guidance
+    - role: portfolio_owners
+      interaction: priority_alignment
+
+  communication:
+    upstream:
+      - Strategic recommendations
+      - Portfolio health reports
+    downstream: []
+    lateral:
+      - Priority alignment
+      - Resource discussions
