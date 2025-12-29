@@ -31,6 +31,34 @@ INV-EXE-001: shall NOT commit Organization to External_Commitment WITHOUT Princi
 2. Run instantiation script (see [Getting Started](docs/GETTING_STARTED.md))
 3. Configure for your strategic domain
 
+---
+
+## Specification
+
+| Attribute | Value |
+|-----------|-------|
+| **Governed By** | [AGET_TEMPLATE_SPEC v3.1](https://github.com/aget-framework/aget/blob/main/specs/AGET_TEMPLATE_SPEC.md) |
+| **Foundation** | [WORKER_TEMPLATE_SPEC v1.0](https://github.com/aget-framework/aget/blob/main/specs/WORKER_TEMPLATE_SPEC_v1.0.yaml) |
+| **Archetype** | Executive |
+| **Extends** | Advisor |
+| **Manifest Version** | 3.0 |
+| **Contract Tests** | 8 tests |
+
+### Key Capabilities
+
+| ID | Capability | Pattern |
+|----|------------|---------|
+| CAP-001 | Wake Protocol | event-driven |
+| CAP-009 | Wind Down Protocol | event-driven |
+| CAP-020 | Version Configuration | ubiquitous |
+| CAP-028 | Project Plan Pattern | event-driven |
+
+Validate compliance: `pytest tests/ -v`
+
+See: [Full specification](https://github.com/aget-framework/aget/tree/main/specs)
+
+---
+
 ## Structure
 
 ```
