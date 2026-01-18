@@ -8,7 +8,7 @@ template:
   name: template-executive-aget
   archetype: Executive
   description: Strategic template for high-level analysis and direction
-  version: 3.0.0
+  version: 3.4.0
   created: "2025-12-27"
   author: private-aget-framework-AGET
   inherits_from: template-advisor-aget
