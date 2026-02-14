@@ -1,0 +1,270 @@
+# ONTOLOGY: Executive Archetype v1.0
+# SKOS-aligned concept definitions for decision-making and budget management
+#
+# Archetype: executive
+# Created: 2026-02-14
+# Author: private-aget-framework-AGET
+# Format: SKOS-inspired YAML (aget-framework convention)
+# Concepts: 7
+# Project: ARC-001 (Archetype Customization v3.5)
+
+apiVersion: aget.framework/v1
+kind: OntologySpec
+metadata:
+  name: executive-archetype-ontology
+  version: 1.0.0
+  created: 2026-02-14
+  author: private-aget-framework-AGET
+  archetype: executive
+  description: >
+    Formal vocabulary for executive archetype agents. Defines concepts for
+    strategic decision-making, budget management, and stakeholder alignment.
+  extends: ONTOLOGY_personal_ai_systems_v1.0.yaml
+
+# ============================================================================
+# CONCEPT SCHEME
+# ============================================================================
+
+conceptScheme:
+  uri: aget:ontology/executive
+  prefLabel: Executive Archetype Ontology
+  definition: >
+    A vocabulary for describing executive agent capabilities including
+    decision authority, budget oversight, and stakeholder management.
+  hasTopConcept:
+    - aget:archetype/executive/Decision
+    - aget:archetype/executive/Budget
+    - aget:archetype/executive/Stakeholder
+  relatedScheme:
+    - aget:ontology/personal-ai-systems
+
+# ============================================================================
+# CONCEPTS
+# ============================================================================
+
+concepts:
+
+  # --------------------------------------------------------------------------
+  # Concept: Decision
+  # --------------------------------------------------------------------------
+  - id: EXE-001
+    uri: aget:archetype/executive/Decision
+    prefLabel: Decision
+    altLabel:
+      - Executive_Decision
+      - Strategic_Choice
+      - Determination
+    definition: >
+      A choice among alternatives that commits resources, sets direction,
+      or establishes policy. Executive decisions have organizational impact.
+    scopeNote: >
+      Decision authority defined in governance. Per AGET Decision Authority
+      Matrix, some decisions require escalation.
+    theoreticalBasis:
+      primary: Decision Theory
+      source: Management Science
+      reference: https://en.wikipedia.org/wiki/Decision_theory
+    broader: null
+    narrower: null
+    related:
+      - aget:archetype/executive/Authority
+      - aget:archetype/executive/Stakeholder
+    enumValues:
+      - Strategic     # Long-term direction
+      - Tactical      # Medium-term execution
+      - Operational   # Day-to-day choices
+    inScheme: aget:ontology/executive
+    cluster: Decision Making
+
+  # --------------------------------------------------------------------------
+  # Concept: Authority
+  # --------------------------------------------------------------------------
+  - id: EXE-002
+    uri: aget:archetype/executive/Authority
+    prefLabel: Authority
+    altLabel:
+      - Decision_Authority
+      - Authorization
+      - Mandate
+    definition: >
+      The sanctioned power to make certain types of decisions without
+      further approval.
+    scopeNote: >
+      AGET: Decision Authority Matrix defines autonomous vs escalation
+      decisions. Authority boundaries prevent scope creep.
+    theoreticalBasis:
+      primary: Organizational Authority
+      source: Management Theory
+    broader: null
+    narrower: null
+    related:
+      - aget:archetype/executive/Decision
+      - aget:archetype/executive/Delegation
+    inScheme: aget:ontology/executive
+    cluster: Decision Making
+
+  # --------------------------------------------------------------------------
+  # Concept: Budget
+  # --------------------------------------------------------------------------
+  - id: EXE-003
+    uri: aget:archetype/executive/Budget
+    prefLabel: Budget
+    altLabel:
+      - Financial_Plan
+      - Resource_Allocation
+      - Funding
+    definition: >
+      The allocation of financial or other resources to activities,
+      projects, or organizational units.
+    scopeNote: >
+      Budgets enable resource planning and accountability. Budget
+      decisions often require executive authority.
+    theoreticalBasis:
+      primary: Financial Management
+      source: Corporate Finance
+    broader: null
+    narrower: null
+    related:
+      - aget:archetype/executive/Decision
+      - aget:archetype/executive/ROI
+    inScheme: aget:ontology/executive
+    cluster: Resource Management
+
+  # --------------------------------------------------------------------------
+  # Concept: Stakeholder
+  # --------------------------------------------------------------------------
+  - id: EXE-004
+    uri: aget:archetype/executive/Stakeholder
+    prefLabel: Stakeholder
+    altLabel:
+      - Interested_Party
+      - Constituency
+    definition: >
+      An individual or group with interest in or influence over
+      organizational decisions and outcomes.
+    scopeNote: >
+      Stakeholder management involves identifying, analyzing, and
+      engaging those affected by decisions.
+    theoreticalBasis:
+      primary: Stakeholder Theory
+      source: Freeman 1984
+      reference: https://en.wikipedia.org/wiki/Stakeholder_theory
+    broader: null
+    narrower: null
+    related:
+      - aget:archetype/executive/Decision
+      - aget:archetype/executive/Communication
+    inScheme: aget:ontology/executive
+    cluster: Stakeholder Management
+
+  # --------------------------------------------------------------------------
+  # Concept: ROI
+  # --------------------------------------------------------------------------
+  - id: EXE-005
+    uri: aget:archetype/executive/ROI
+    prefLabel: ROI
+    altLabel:
+      - Return_on_Investment
+      - Value_Ratio
+      - Cost_Benefit
+    definition: >
+      A measure of the gain or loss generated relative to the
+      resources invested.
+    scopeNote: >
+      ROI analysis informs investment decisions. Consider both
+      quantitative and qualitative returns.
+    theoreticalBasis:
+      primary: Investment Analysis
+      source: Financial Analysis
+    broader: null
+    narrower: null
+    related:
+      - aget:archetype/executive/Budget
+      - aget:archetype/executive/Decision
+    inScheme: aget:ontology/executive
+    cluster: Resource Management
+
+  # --------------------------------------------------------------------------
+  # Concept: Delegation
+  # --------------------------------------------------------------------------
+  - id: EXE-006
+    uri: aget:archetype/executive/Delegation
+    prefLabel: Delegation
+    altLabel:
+      - Authority_Transfer
+      - Empowerment
+    definition: >
+      The assignment of decision-making authority to subordinates
+      while retaining accountability.
+    scopeNote: >
+      Effective delegation matches authority to capability. Over-delegation
+      creates risk; under-delegation creates bottlenecks.
+    theoreticalBasis:
+      primary: Delegation Theory
+      source: Management
+    broader: null
+    narrower: null
+    related:
+      - aget:archetype/executive/Authority
+    inScheme: aget:ontology/executive
+    cluster: Decision Making
+
+  # --------------------------------------------------------------------------
+  # Concept: Communication
+  # --------------------------------------------------------------------------
+  - id: EXE-007
+    uri: aget:archetype/executive/Communication
+    prefLabel: Communication
+    altLabel:
+      - Executive_Communication
+      - Announcement
+      - Directive
+    definition: >
+      The transmission of decisions, direction, and information to
+      stakeholders in appropriate form and channels.
+    scopeNote: >
+      Communication style varies by audience. Executives communicate
+      vision, decisions, and rationale.
+    theoreticalBasis:
+      primary: Organizational Communication
+      source: Communication Theory
+    broader: null
+    narrower: null
+    related:
+      - aget:archetype/executive/Stakeholder
+      - aget:archetype/executive/Decision
+    inScheme: aget:ontology/executive
+    cluster: Stakeholder Management
+
+# ============================================================================
+# RELATIONSHIPS
+# ============================================================================
+
+relationships:
+  - subject: aget:archetype/executive/Authority
+    predicate: skos:related
+    object: aget:archetype/executive/Decision
+    note: Authority enables decisions
+
+  - subject: aget:archetype/executive/Delegation
+    predicate: skos:related
+    object: aget:archetype/executive/Authority
+    note: Delegation transfers authority
+
+# ============================================================================
+# METADATA
+# ============================================================================
+
+provenance:
+  project: ARC-001
+  created: 2026-02-14
+  author: private-aget-framework-AGET
+  methodology: Derived from executive archetype EXECUTIVE_SPEC.md
+
+validation:
+  conceptCount: 7
+  clusters: 3
+  theoreticalGrounding: 100%
+  skosCompliance: partial
+
+# End of ONTOLOGY_executive.yaml
