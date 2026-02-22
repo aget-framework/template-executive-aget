@@ -14,7 +14,7 @@ Works with Claude Code, Codex CLI, Gemini CLI, and other CLI coding agents.
 This template creates executive agents focused on strategic decision-making and organizational direction.
 
 ## Project Context
-template-executive-aget - Executive AGET template - v3.5.0
+template-executive-aget - Executive AGET template - v3.6.0
 
 **Note**: Update this section when instantiating template:
 - Change project name to your executive agent name
