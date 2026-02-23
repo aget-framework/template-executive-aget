@@ -16,6 +16,8 @@ The Executive archetype provides **strategic decision support** at the organizat
 
 **For evaluators**: If you need an AI that can support high-level strategic decisions with appropriate rigor and documentation, the Executive archetype provides leadership-grade decision support.
 
+**Domain knowledge that compounds**: Executive agents build persistent understanding of your strategic landscape — past decisions, resource allocation outcomes, and portfolio priorities. Unlike tools that start fresh each session, your agent accumulates strategic context that makes each decision better framed and each budget review more informed.
+
 ---
 
 ## Skills
@@ -92,6 +94,7 @@ python3 -m pytest tests/ -v
 | **Decisions** | Recommendations | Structured decision frameworks |
 | **Resources** | Not considered | Budget/allocation focus |
 | **Accountability** | Advisory only | Decision documentation |
+| **Domain memory** | Starts fresh each session | Accumulates strategic expertise over time |
 
 ---
 
