@@ -61,6 +61,13 @@ class TestExecutiveArchetype:
         if archetype.exists():
             assert "executive" in archetype.read_text().lower()
 
+    def test_governance_is_rigorous(self):
+        """Executive must have rigorous governance."""
+        archetype = get_template_root() / ".aget" / "persona" / "archetype.yaml"
+        if archetype.exists():
+            content = archetype.read_text().lower()
+            assert "governance_intensity: rigorous" in content
+
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])

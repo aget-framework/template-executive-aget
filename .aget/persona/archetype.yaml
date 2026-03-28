@@ -25,6 +25,8 @@ archetype:
     - Cannot commit organization externally
     - Must document strategic rationale
 
+  governance_intensity: rigorous
+
   theoretical_basis:
     primary: Systems Thinking (holistic view)
     secondary: Cybernetics (strategic feedback)
