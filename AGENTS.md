@@ -84,6 +84,12 @@ When facing any substantial change or multi-step task:
 
 ---
 
+### Governance Capabilities
+
+| Attribute | Value |
+|-----------|-------|
+| Governance Intensity | Rigorous |
+
 ## Purpose
 
 > Enable strategic decision-making through high-level analysis and organizational direction.
