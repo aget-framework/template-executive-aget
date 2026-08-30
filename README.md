@@ -2,7 +2,7 @@
 
 > Enable strategic decisions with portfolio oversight and resource allocation
 
-**Version**: v3.31.1 | **Archetype**: Executive | **Skills**: 2 specialized + 15 universal
+**Version**: v3.33.0 | **Archetype**: Executive | **Skills**: 2 specialized + 15 universal
 
 ---
 
